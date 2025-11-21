@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/vathcodes/server-cofood.git'
+                git branch: 'main', url: 'https://github.com/vathcodes/food-full.git'
             }
         }
 
