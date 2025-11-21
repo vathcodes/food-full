@@ -18,11 +18,11 @@ const Verify = () => {
             if (response.data.success) {
                 navigate("/myorders"); // Điều hướng tới trang "myorders" nếu thành công
             } else {
-                window.location.replace("http://34.231.122.10:3000/"); // Điều hướng về trang chủ nếu thất bại
+                window.location.replace("http://34.231.122.10:8000/"); // Điều hướng về trang chủ nếu thất bại
             }
         } catch (error) {
             console.error("Error during payment verification", error);
-            window.location.replace("http://34.231.122.10:3000/"); // Điều hướng về trang chủ nếu có lỗi
+            window.location.replace("http://34.231.122.10:8000/"); // Điều hướng về trang chủ nếu có lỗi
         }
     }
 
